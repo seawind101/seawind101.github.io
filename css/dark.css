@@ -1,6 +1,6 @@
 body {
     font-family: arial, sans-serif;
-    background-color: rgb(238, 139, 100);
+    background-color: rgb(77, 47, 36);
     margin: 0;
     padding: 10px;
 }
@@ -9,12 +9,12 @@ body {
     width: 60%;
     margin: auto;
     border: 1px solid rgb(0, 0, 0);
-
+   
 }
 
 #banner {
 
-    background-color: rgb(154, 110, 255);
+    background-color: rgb(59, 25, 55);
     text-align: center;
     border: 1px solid rgb(0, 0, 0);
     margin: 10px;
@@ -23,15 +23,15 @@ body {
 #blogpost {
     margin: 10px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: aqua;
-
+    background-color: rgb(27, 78, 78);
+   
 }
 
 .post {
     margin: 30px;
     padding: 30px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: aquamarine;
+    background-color: rgb(52, 105, 89);
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .post img {
     width: 200px;
-
+    
 }
 
 .gallery {
@@ -52,13 +52,13 @@ body {
 }
 
 a {
-    color: rgb(179, 128, 226);
+color: rgb(179, 128, 226);
 }
 
 a:hover {
-    color: rgb(140, 188, 229);
+color: rgb(140, 188, 229);
 }
 
 a:visited {
-    color: rgb(230, 105, 105);
+color: rgb(230, 105, 105);
 }

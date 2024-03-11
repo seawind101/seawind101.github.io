@@ -15,28 +15,30 @@
             <h1>My Website</h1>
             <a href="index.html">Home</a> |
             <a href="about.html">About Me</a> |
-            <a href="gameguide.html">Get to School</a> |
+            <a href="gameguide.html">Get to School</a>|
             <a href="#" onclick="changeSheet()">Change Mode</a>
         </div>
-
         <div id="blogpost">
             <div class="post">
-                <h2>About Me</h2>
-                <p>My name is Carlos, I have made this little game for people to enjoy.</p>
-                <p>Click <a href="about.html">Here</a> to learn more.</p>
+                <h2>Play my game</h2>
+                <p>Click <a href="GetToSchool/index.html">Here</a> to play.</p>
             </div>
             <div class="post">
-                <h2 style="display: block;">Get To School</h2>
-                <img src="img/gamescreen.img.png" alt="Game Loading Screen" class="left">
-                <p>Get to school is a smash hit indie success about getting to school... presumably, that choice is up to you.</p>
-                <p>Click <a href="gettoschool/index.html">Here</a> to play.</p>
+                <h2>Gallery</h2>
+                    <p>These are just a few pictures from my game.</p>
+                <div class="gallery">
+                    <a href="img/gamescreen.img.png"> <img src="img/gamescreen.img.png" alt=""></a>
+                    <a href="img/home.img.png"> <img src="img/home.img.png" alt=""></a>
+                    <a href="img/bank.img.png"> <img src="img/bank.img.png" alt=""></a>
+                    <a href="img/beach.img.png"> <img src="img/beach.img.png" alt=""></a>
+                    <a href="img/bad.img.png"> <img src="img/bad.img.png" alt=""></a>
+                    <a href="img/dungeon.img.png"> <img src="img/dungeon.img.png" alt=""></a>
+                </div>
             </div>
+
+
         </div>
-
-
-    </div>
 </body>
-
 <script>
 
 
@@ -47,7 +49,7 @@
         lightMode = !lightMode;
         var lightSheet = document.getElementById("lightSheet")
         var darkSheet = document.getElementById("darkSheet")
-        
+
         // if lightMode turned off, display dark styleSheet
         // two equals compares two things
         if (lightMode == false) {
@@ -62,6 +64,5 @@
     }
 
 </script>
-
 
 </html>
