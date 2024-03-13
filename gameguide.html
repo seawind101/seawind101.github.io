@@ -7,16 +7,25 @@
     <title>Elda Wong</title>
     <link id="lightSheet" rel="stylesheet" href="css/style.css">
     <link id="darkSheet" rel="stylesheet" media="none" href="css/dark.css">
+    <style>
+        body {
+            background-image: url(img/treeSpirit.png);
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 
 <body>
     <div id="content">
         <div id="banner">
             <h1>My Website</h1>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Me</a> |
-            <a href="gameguide.html">Get to School</a>|
-            <a href="#" onclick="changeSheet()">Change Mode</a>
+
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="gameguide.html">Get to School</a>
+                <a href="#" onclick="changeSheet()">Change Mode</a>
+            </div>
         </div>
         <div id="blogpost">
             <div class="post">
@@ -25,14 +34,16 @@
             </div>
             <div class="post">
                 <h2>Gallery</h2>
-                    <p>These are just a few pictures from my game.</p>
+                <p>These are just a few pictures from my game.</p>
                 <div class="gallery">
-                    <a href="img/gamescreen.img.png"> <img src="img/gamescreen.img.png" alt=""></a>
-                    <a href="img/home.img.png"> <img src="img/home.img.png" alt=""></a>
-                    <a href="img/bank.img.png"> <img src="img/bank.img.png" alt=""></a>
-                    <a href="img/beach.img.png"> <img src="img/beach.img.png" alt=""></a>
-                    <a href="img/bad.img.png"> <img src="img/bad.img.png" alt=""></a>
-                    <a href="img/dungeon.img.png"> <img src="img/dungeon.img.png" alt=""></a>
+                    <img class="slide" src="img/gamescreen.img.png" style="width:60%">
+                    <img class="slide" src="img/bank.img.png" style="width:60%">
+                    <img class="slide" src="img/beach.img.png" style="width:60%">
+                    <img class="slide" src="img/dungeon.img.png" style="width:60%">
+                    <img class="slide" src="img/bad.img.png" style="width:60%">
+                    <img class="slide" src="img/home.img.png" style="width:60%">
+                    <img class="slide" src="img/oldMan.png" style="width:60%">
+                    <img class="slide" src="img/town.png" style="width:60%">
                 </div>
             </div>
 
@@ -63,6 +74,20 @@
         }
     }
 
+    var slideShow = 0;
+    rotate();
+
+    function rotate() {
+        var i;
+        var x = document.getElementsByClassName("slide");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideShow++;
+        if (slideShow > x.length) { slideShow = 1 }
+        x[slideShow - 1].style.display = "block";
+        setTimeout(rotate, 5000);
+    }
 </script>
 
 </html>
